@@ -105,7 +105,7 @@ except:
 # ⚙️ 左侧：全局控制台与多语言切换
 # ==========================================
 with st.sidebar:
-    selected_lang = st.selectbox("🌐 Language / Langue / 语言", ["中文", "English", "Français"])
+    selected_lang = st.sidebar.selectbox("Language / Langue / 语言", ['English', 'Français', '中文'], index=0)
     t = LANG[selected_lang]
     st.markdown("---")
     
