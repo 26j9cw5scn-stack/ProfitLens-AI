@@ -151,7 +151,7 @@ if app_mode == t["mode_1"]:
                 Task 5: HIGHLIGHT important keywords, data points, and core concepts in your text using Streamlit's Markdown color syntax. Examples: :red[High Risk], :blue[Monetization Strategy], :green[High ROI], :orange[Key Metric], :violet[Audience].
                 🛑 CRITICAL: The diagnosis text MUST be entirely in {t['ai_lang']}.
                 """
-                model = genai.GenerativeModel('models/gemini-2.5-pro')
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 ai_text = model.generate_content(prompt).text
                 
                 # 3. Python 正则抓取与数据清洗
@@ -252,7 +252,7 @@ elif app_mode == t["mode_2"]:
                 
                 🛑 CRITICAL: Write the comparison report entirely in {t['ai_lang']}.
                 """
-                model = genai.GenerativeModel('models/gemini-2.5-pro')
+                model = genai.GenerativeModel('models/gemini-2.5-flash')
                 ai_text = model.generate_content(prompt).text
                 
                 # 3. 数据解析
